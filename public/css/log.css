@@ -1,0 +1,126 @@
+.title-content {
+    margin: 16px 0 0;
+}
+.title-content h1 {
+    color: #dedede;
+    text-align: center;
+    font-size: 22px;
+}
+
+.main-content {
+    margin: 18px 12px;
+}
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card-log {
+    background: #1d2025;
+    padding: 8px 14px;
+    border-radius: 8px;
+}
+.card-log .title {
+    color: #c1c1c1;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+}
+.card-log .date {
+    color: #bdbdbd;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: right;
+}
+
+/* fixed Section - Show */
+.fixed-content {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: -webkit-fill-available;
+    padding: 14px 16px 14px 12px;
+    z-index: 9999;
+    background: rgb(31 40 49 / 54%);
+    backdrop-filter: blur(20px);
+}
+.back-btn {
+    display: flex;
+    margin: 0 0 0 5px;
+}
+.title-fixed {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+.title-fixed span {
+    display: flex;
+    justify-content: center;
+    color: #eaeaea;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Main Section - Show */
+.main-show-content {
+    margin: 74px 20px 20px;
+}
+.main-show-content .title {
+    color: #d9d9d9;
+    font-size: 24px;
+    overflow-wrap: anywhere;
+    line-height: 1.4;
+}
+.main-show-content .date {
+    color: #a9a9a9;
+    font-size: 12px;
+    margin: 4px 0 10px;
+    text-align: left;
+}
+.main-show-content .description {
+    margin: 12px 0 0;
+    font-size: 14px;
+    color: #adadad;
+    line-height: 1.6;
+}
+.separator {
+    border: 1px solid #3f424e;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        margin: 100px 80px 60px;
+    }
+    .fixed-content {
+        position: inherit;
+        margin: 100px 0 0;
+        padding: 14px 22px 14px 18px;
+        border-radius: 8px;
+    }
+    .main-show-content {
+        margin: 38px 20px 20px;
+    }
+    .title-content h1 {
+        font-size: 26px;
+    }
+    .main-content {
+        width: -webkit-fill-available;
+        justify-content: center;
+        display: flex;
+    }
+    .card-container {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main-show-content {
+        margin: 38px 88px 20px;
+    }
+}
+@media screen and (min-width: 1700px) {
+    .main-show-content {
+        margin: 38px 160px 20px;
+    }
+}

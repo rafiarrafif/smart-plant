@@ -1,0 +1,86 @@
+/* Untuk Header Atas */
+.fixed-header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: -webkit-fill-available;
+    padding: 14px 16px 14px 12px;
+    z-index: 9999;
+    background: rgb(31 40 49 / 54%);
+    backdrop-filter: blur(20px);
+}
+.back-btn,
+.del-btn {
+    display: flex;
+    align-items: center;
+}
+.title-plant {
+    display: flex;
+    justify-content: center;
+    color: #eaeaea;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Main Content */
+.card-token {
+    margin: 86px 14px 64px;
+}
+.header-token h1 {
+    text-align: center;
+    font-size: 32px;
+    background: -webkit-linear-gradient(#eee, #8e46fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+.header-token p {
+    color: #cfcfcf;
+    font-size: 14px;
+    text-align: center;
+    line-height: 140%;
+    margin: 8px 0 14px;
+}
+.main-highlight-token {
+    display: flex;
+    justify-content: center;
+}
+.main-highlight-token .main {
+    background: #1d2025;
+    padding: 12px 22px 12px 26px;
+    border-radius: 10px;
+    display: flex;
+    gap: 12px;
+}
+.main-highlight-token .main span {
+    color: #b0a1fe;
+    font-size: 22px;
+}
+.main-highlight-token .main button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+}
+.action-token {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0 0;
+}
+.action-token a {
+    color: #a1a1a1;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        margin: 0 76px 0;
+    }
+    .fixed-header {
+        position: inherit;
+        margin: 100px 0 0;
+        padding: 14px 22px 14px 18px;
+        border-radius: 8px;
+    }
+}

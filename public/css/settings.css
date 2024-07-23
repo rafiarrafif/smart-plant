@@ -1,0 +1,67 @@
+.main-container {
+    margin: 18px 12px;
+}
+.header-content h1 {
+    color: #dfdfdf;
+    font-size: 24px;
+    text-align: center;
+}
+.main-content {
+    margin: 28px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.settings-section {
+    margin: 0 6px 0;
+}
+.settings-section .title {
+    margin-bottom: 6px;
+}
+.settings-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.settings-section .title h1 {
+    font-size: 20px;
+    color: #cfcfcf;
+    font-weight: 600;
+}
+.settings-card {
+    background: #1d2025;
+    color: #bfbfbf;
+    display: flex;
+    height: 52px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 18px;
+    border-radius: 6px;
+}
+.settings-card .icon {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .main-container {
+        margin-top: 106px;
+    }
+    .header-content h1 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    main {
+        display: flex;
+        justify-content: center;
+    }
+    .main-container {
+        width: 800px;
+    }
+    .main-content {
+        gap: 22px;
+    }
+}

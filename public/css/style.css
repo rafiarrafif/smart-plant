@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: "Plus Jakarta Sans"; */
+    font-family: "Poppins";
+}
+
+body {
+    background-color: #121318;
+}
+
+nav {
+    position: fixed;
+    bottom: 12px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+button,
+textarea,
+input,
+select,
+label,
+a,
+.flash-message {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+/* FIREFOX */
+@-moz-document url-prefix() {
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: #ebbb36 transparent;
+    }
+}
+
+/* CHROME */
+::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #564f7d;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #7a70b1;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #b0a1fe;
+}

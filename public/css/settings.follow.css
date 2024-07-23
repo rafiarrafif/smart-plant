@@ -1,0 +1,223 @@
+.back-container {
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    z-index: 9999;
+}
+
+.main-container {
+    margin: 26px 12px 72px;
+}
+.header-content {
+    margin-top: 52px;
+}
+.image-logo {
+    display: flex;
+    justify-content: center;
+}
+.image-logo img {
+    width: 180px;
+}
+.header-content .title h1 {
+    font-size: 22px;
+    text-align: center;
+    margin: 22px 0 0;
+    color: #eaeaea;
+}
+.header-content .subtitle {
+    font-size: 14px;
+    justify-content: center;
+    text-align: center;
+    color: #8d8d8d;
+    margin: 6px 0 0;
+    line-height: 120%;
+}
+
+.card-container {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.left-panel,
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-profile {
+    display: flex;
+    gap: 12px;
+    padding: 10px 16px;
+    border-radius: 12px;
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+}
+.card-profile::before {
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -99;
+    background-color: hsla(0, 100%, 50%, 1);
+    background-image: radial-gradient(
+            at 99% 46%,
+            hsla(48, 97%, 56%, 1) 0px,
+            transparent 50%
+        ),
+        radial-gradient(at 0% 100%, hsla(341, 94%, 53%, 1) 0px, transparent 50%),
+        radial-gradient(at 62% 52%, hsla(302, 92%, 45%, 1) 0px, transparent 50%),
+        radial-gradient(at 2% 5%, hsla(265, 98%, 51%, 1) 0px, transparent 50%),
+        radial-gradient(
+            at 98% 100%,
+            hsla(265, 98%, 51%, 1) 0px,
+            transparent 50%
+        );
+}
+.card-profile:hover::before {
+    opacity: 1;
+}
+.card-profile::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(27, 29, 33, 0.5);
+    z-index: -98;
+}
+
+.profile-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.profile-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right-side .name {
+    margin-top: -4px;
+}
+.right-side .name p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #dedede;
+    margin: 0;
+}
+.right-side .contrib p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 128%;
+    font-style: italic;
+    color: #9f9f9f;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .main-container {
+        margin: 106px 12px 72px;
+    }
+    .card-container {
+        flex-direction: column;
+    }
+    .card-profile {
+        height: 75px;
+        width: 50%;
+    }
+    .left-panel,
+    .right-panel {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .back-container {
+        left: 16px;
+        top: 20px;
+    }
+    .back-container svg {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media screen and (min-width: 880px) {
+    .header-content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .header-content .title h1 {
+        margin: 0;
+        text-align: left;
+    }
+    .image-logo img {
+        width: 136px;
+        margin: 10px 0 0;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+    .main-content {
+        width: 850px;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+    .left-panel,
+    .right-panel {
+        width: 100%;
+        flex-direction: row;
+    }
+    .card-profile {
+        flex-direction: column;
+        width: 50%;
+        height: 232px;
+    }
+    .left-side {
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+    }
+    .header-content .title h1 {
+        font-size: 26px;
+    }
+    .header-content .subtitle {
+        margin: 0;
+        font-size: 14px;
+    }
+    .right-side .name p {
+        text-align: center;
+        font-size: 20px;
+        margin: 8px 0 0;
+    }
+    .right-side .contrib p {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 6px;
+    }
+    .profile-container {
+        width: 102px;
+        height: 102px;
+        border-radius: 90px;
+    }
+    .card-container {
+        margin-top: 34px;
+    }
+}
